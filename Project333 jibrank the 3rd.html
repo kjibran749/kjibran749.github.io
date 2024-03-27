@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<title>Jibrank's Dish Dump</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Recursive:wght@300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<style>
+title {
+  font-family: 'Monsterrat', sans-serif;
+}
+body {
+  font-family: 'Recursive', sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: url("https://media.istockphoto.com/id/1454811153/photo/dolly-shot-close-up-of-nice-dining-chair-with-wooden-table-and-dish-sets-interior-design.webp?b=1&s=170667a&w=0&k=20&c=jpQF0POnGHelMtEP6_IRLL5SZMf6WwEDbpSFBAjbtZ4=");
+  background-size: cover;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+  background
+}
+h1 {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: purple;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: purple;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: ;
+  background: linear-gradient(bottom, rgba(128,128,128,1), rgba(128,128,128,.4));
+  background: -webkit-linear-gradient(bottom, rgba(128,128,128,1), rgba(128,128,128,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+  color: gold;
+  font-family: 'Oswald', sans-serif;
+}
+
+input {
+	font-size: 22px;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.show-description small {
+  opacity: 1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.first{
+  background-image: url("https://natashaskitchen.com/wp-content/uploads/2019/08/Caprese-Salad-6.jpg");
+  background-size: cover;
+}
+.second{
+  background-image: url("https://www.cookingclassy.com/wp-content/uploads/2017/02/skillet-seared-salmon-2.jpg");
+  background-size: cover;
+}
+.dessert{
+  background-image: url("https://thebigmansworld.com/wp-content/uploads/2022/10/tiramisu-cake-recipe-378x378.jpg");
+  background-size: cover;
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+    background: red;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+    
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>jibrank's dish dump</h1>
+<h2>A dump for some of the dishes I sell.</h2>
+<div class="first">
+<input type="number" min="0" class="quantities" style="width: 50px">
+  <p>Caprese Salad <span class="price">$14</span><br />
+  <small>The Caprese salad is a classic Italian dish that typically consists of ripe tomatoes, fresh mozzarella cheese, and aromatic basil leaves. It is commonly drizzled with extra virgin olive oil, balsamic vinegar, and seasoned with salt and pepper. This refreshing first course is all about showcasing the simplicity and quality of the ingredients, with a perfect balance of flavors and textures. </small></p>
+</div>
+
+<div class="second">
+<input type="number" min="0" class="quantities" style="width: 50px">
+  <p>Grilled Salmon with Lemon Butter Sauce <span class="price">$22</span><br />
+  <small>Grilled Salmon with Lemon Butter Sauce is a delightful main course option. It involves grilling a tender and flaky salmon fillet to perfection, paired with a creamy and tangy lemon butter sauce. The dish is usually served alongside a bed of steamed vegetables or a flavorful rice pilaf. This main course is all about highlighting the natural richness of the salmon while adding a burst of citrusy flavors, making it a popular choice for seafood lovers.</small></p>
+</div>
+  
+<div class="dessert">
+<input type="number" min="0" class="quantities" style="width: 50px">
+  <p>Tiramisu <span class="price">$8</span><br />
+  <small>Tiramisu is a classic Italian dessert that has gained worldwide popularity. Traditionally made with ladyfingers soaked in coffee, layered with a velvety mascarpone cream, and dusted with cocoa powder, every bite of Tiramisu is a delightful combination of textures and flavors. This dessert is about indulging in the light and creamy goodness while enjoying the perfect balance between the sweetness of the cream and the bitterness of the coffee.</small></p>
+</div>
+<br><br><br><br><br>
+<input type="Name" id= "Name" placeholder="Name">
+<input type="Email" id= "Email" placeholder="Email">
+<input type= "submit" id="submit">
+<br><br>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+  import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
+  
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAIyKV-XqUNAik_OpwNDPMHsMQal5yxlME",
+    authDomain: "xdghdgsetwtwtw4tw4.firebaseapp.com",
+    projectId: "xdghdgsetwtwtw4tw4",
+    storageBucket: "xdghdgsetwtwtw4tw4.appspot.com",
+    messagingSenderId: "186963229691",
+    appId: "1:186963229691:web:8edd5aac41a4f7e0e5295e"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+  
+ const Name = document.querySelector("#Name") 
+ const Email = document.querySelector("#Email")
+ document.querySelector('#submit').addEventListener('click', Submit)
+  const prices = document.querySelectorAll(".price")
+  const quantities = document.querySelectorAll(".quantities")
+  const itemsList = ["caprese salad", "lemon_butter_salmon", "tiramisu"]
+function Submit() {
+ const timestamp = buildTimestamp()
+  let total = 0
+  let cart = { }
+  for  (let i=0; i<quantities.length; i=i+1) {
+  	if (quantities[i].value != "0" && quantities[i].value != "") {	
+		let price = prices[i].innerHTML.replace('$', '')
+		total = total + quantities[i].value * price
+  		cart[itemsList[i]] = parseInt(quantities[i].value) 
+  	}
+  	quantities[i].value = ""
+  }
+ 
+  
+  set(ref(db, timestamp), {
+	  Name: Name.value,
+      email: Email.value,
+	  cart: cart,
+	  totalPrice: total,
+	  paid: "not yet",
+  });
+
+  Name.value = ""
+  Email.value = ""
+}
+function buildTimestamp() {
+  const now = new Date();
+  let timestamp = now.getFullYear().toString() + "/";
+  //const month = now.toLocaleString('default', { month: 'long' });
+
+  let month = now.getMonth()+1   //add 1 because Javascript uses 0 for January
+  month = month.toString()
+  month = addLeadingZero(month)
+  timestamp += month + "/"; 
+
+  let date = now.getDate().toString()
+  date = addLeadingZero(date)
+  timestamp += date + "/";
+
+  let hours = now.getHours().toString()
+  hours = addLeadingZero(hours)
+  timestamp += hours + ":";
+
+  let minutes = now.getMinutes().toString()
+  minutes = addLeadingZero(minutes)
+  timestamp += minutes + ":";
+
+  let seconds = now.getSeconds().toString()
+  seconds = addLeadingZero(seconds)
+  timestamp += seconds;
+
+  return timestamp
+}
+
+function addLeadingZero(units) {
+	if (units.length < 2) {
+		units = "0" + units
+	}
+	return units
+}
+  
+  
+</script>
+ 
+
+
+</body>
